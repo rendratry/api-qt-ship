@@ -1,7 +1,6 @@
 package helper
 
 import (
-	"fmt"
 	"qt-api/model/domain"
 	"strconv"
 	"strings"
@@ -9,17 +8,9 @@ import (
 
 var data = [][]string{
 	{"1", "Kapan Container 1", "20 knots", "Surabaya to Jakarta", "-39384938", "38748374"},
-	{"2", "Kapan Container 2", "20 knots", "Surabaya to Jakarta", "-39384938", "38748374"},
-	{"3", "Kapan Container 3", "20 knots", "Surabaya to Jakarta", "-39384938", "38748374"},
-	{"4", "Kapan Container 3", "20 knots", "Surabaya to Jakarta", "-39384938", "38748374"},
-}
-
-type Fungsi interface {
-	Fungsi1()
-}
-
-func FungsiPrivate() {
-	fmt.Println("ini private")
+	{"2", "Kapan Container 2", "10 knots", "Surabaya to Pontianak", "-39384938", "38748374"},
+	{"3", "Kapan Container 3", "21 knots", "Surabaya to Batam", "-39384938", "38748374"},
+	{"4", "Kapan Container 3", "11 knots", "Surabaya to Jakarta", "-39384938", "38748374"},
 }
 
 func FilterData(id, isAll string) []domain.Ship {
